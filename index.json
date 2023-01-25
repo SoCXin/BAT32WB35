@@ -1,26 +1,35 @@
 {
-    "type":"MCU",
-    "name":"GD32E232",
-    "Freq":"72MHz",
-    "Core":"Cortex-M23",
-    "title": "GigaDevice GD32E232 MCU",
-    "description":"GigaDevice Cortex-M23 MCU",
+    "type":"SoC",
+    "name":"BAT32WB35",
+    "title": "Cmsemicon BAT32WB35 SoC",
+    "description":"Cmsemicon BLE SoC",
+    "Core": {
+        "CoreNum": 1,
+        "Core":"Cortex-M0",
+        "Fmax":48,
+        "DMIPS": 50,
+        "CoreMark": 100
+    },
     "manufacturer": {
-        "vendor":"gigadevice",
-        "homepage":"https://www.gigadevice.com/zh-hans/products/microcontrollers/gd32/arm-cortex-m4/?fwp_processor_type=cortex-m4&fwp_microcontrollers_product_series=GD32E232"
+        "vendor":"Cmsemicon",
+        "homepage":"https://www.mcu.com.cn"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/SoCXin/GD32E232.git"
+        "url": "https://github.com/SoCXin/BAT32WB35.git"
     },
     "version":"1.0.0",
-    "series":["GD32E232KC","GD32E232JC","GD32E232KE","GD32E232PE"],
-    "package":["UFBGA100","LQFP100","LQFP64","LQFP48","QFN60","QFN48"],
-    "peripheral": ["ADC","UART","I2C","SPI","PWM"],
+    "series":["BAT32WB35"],
+    "package":["QFN40"],
+    "peripheral": ["BLE","ADC","UART","SPI","IIC"],
+    "ESD": {
+        "HBM": 2000,
+        "CDM": 500
+    },
     "keywords": [
-        "ADC","DAC","SDIO","CAN","I2C","RTC","SPI",
-        "72MHz",
-        "LQFP48","LQFP32","QFN32",
+        "Cortex-M0",
+        "Cmsemicon",
+        "BLE","ADC","I2C","RTC","SPI","UART",
         "3.6V","1.8V"
     ]
 }
